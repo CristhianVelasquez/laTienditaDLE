@@ -8,6 +8,9 @@
 				case 'products':
 					$address = 'pags/products.php';
 					break;
+				case 'result' :
+					$address = 'pags/resultadoBusqueda.php';
+					break;
 				case 'regA':
 					$address = 'pags/registroA.php';
 				break;
