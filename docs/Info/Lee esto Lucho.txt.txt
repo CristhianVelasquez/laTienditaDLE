@@ -1,0 +1,9 @@
+Luis, ingresé los datos faltantes en el Excel para la inserción.
+Como observaciones te digo que para trabajar los precios como monedas
+hubiera sido más conveniente colocar una coma en vez de punto.
+Sin embargo, siguiendo tu formato, solo agregué un decimal, si
+deseas lo quitas.
+Por cierto, dejé en blanco lo de STOCK, eso chécalo tú.
+
+Pd. Me pasas la voz cualquier observación, por enésima vez también
+chanqué el archivo excel originalque hice de abarrotes y bebidas

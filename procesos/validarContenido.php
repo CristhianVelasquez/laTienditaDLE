@@ -1,0 +1,82 @@
+<?php
+	$address='';
+		if(!isset($_GET['pag'])){
+			$address='pags/defaultPag.php';
+		}else{
+			$pag=$_GET['pag'];
+			switch($pag){
+				case 'products':
+					$address = 'pags/products.php';
+					break;
+				case 'regA':
+					$address = 'pags/registroA.php';
+				break;
+				case 'registrate': //Registrarse
+					$address='pags/registrarAcceder/registrate.php';
+				break;
+				case 'acceder': //Acceder
+					$address='pags/registrarAcceder/formularioLoginRegistro.php';
+				break;
+				case 'car':   //Carrito
+					$address='pags/carrito/carrito.php';
+				break;
+				
+				case 'help': //Ayuda
+					$address='pags/ayuda/seccionAyuda.php';
+				break;
+				
+				case 'abrt': //Abarrotes
+					$address='pags/abarrotes/abarrotes.php';
+				break;
+				case 'beb': //Bebidas
+					$address='pags/bebidas/bebidas.php';
+				break;
+				case 'cuiPer': //Cuidado Personal
+					$address='pags/cuidadoPersonal/cuidadoPersonal.php';
+				break;
+				case 'beb': //Bebidas
+					$address='pags/bebidas/bebidas.php';
+				break;
+				case 'desy': //Desayuno
+					$address='pags/desayuno/desayuno.php';
+				break;
+				case 'embt': //Embutidos
+					$address='pags/embutidos/embutidos.php';
+				break;
+				case 'eltds': //Enlatados
+					$address='pags/enlatados/enlatados.php';
+				break;
+				case 'glltgsn': //Galletas y golosinas
+					$address='pags/galletasGolosinas/galletasGolosinas.php';
+				break;
+				case 'licrs': //Licores
+					$address='pags/licores/licores.php';
+				break;
+				case 'lmpz': //Limpieza
+					$address='pags/limpieza/limpieza.php';
+				break;
+				case 'snkspqs': //Snacks  y piqueos
+					$address='pags/snacksPiqueos/snacksPiqueos.php';
+				break;
+				case 'nosotros': //Nosotros
+					$address='pags/nosotros.php';
+				break;
+				case 'contactenos': //Contactenos
+					$address='pags/contactenos.php';
+				break;
+				case 'infoLegal': //Informacion Legal
+					$address='pags/informacionLegal.php';
+				break;
+				case 'admin':
+					$address='procesos/administrar/panelAdministrativo.php';
+				break;
+				case 'userList':
+					$address='procesos/administrar/listaUsuarios.php';
+				break;
+				case 'productList':
+					$address='procesos/administrar/listaProductos.php';
+				break;
+				}
+		}
+		include($address);
+?>

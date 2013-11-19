@@ -1,0 +1,114 @@
+Producto	Nombre	Sección	Descripción	Marca	Tamaño x Unidad	Precio Unidad	Unidades x Caja	Precio x Caja	Descripción
+Abarrotes	Aceite de Oliva	Abarrotes	Extra Virgen	Borges	750 ml	34,59	6	204,54	
+			Extra Virgen		250 ml	11,59	12	136,08	
+			Puro		500 ml	18,59	6	108,54	
+			Extra Virgen Mesquita	Carbonell	500 ml	32,99	6	194,94	
+			Extra Virgen Mesquita		750 ml	46,9	6	278,4	
+			Extra Virgen		1 Lt	56,6	6	336,6	
+			Extra Virgen		250 ml	19,99	12	236,88	
+			Puro		1 Lt	49,5	6	294	
+			Orgánico	Del Prado	500 ml	26,99	6	158,94	
+			Orgánico		250 ml	15,99	12	188,88	
+			Con Ajo	El Olivar	250 ml	15,99	12	188,88	
+			Extra Virgen c/Orégano		250 ml	15,99	12	188,88	
+			Extra Virgen sabor Intenso		1 Lt	43,2	6	256,2	
+			Extra Virgen sabor Intenso		500 ml	26,3	6	154,8	
+			Extra Virgen		1 Lt	43,2	6	256,2	
+			Extra Virgen		200 ml	11,6	12	136,2	
+	Aceite Vegetal		Botella	Capri	1 Lt	7,1	6	39,6	
+			Clásico	Primor	1 Lt	7,2	6	40,2	
+			Premium		1 Lt	6,69	6	37,14	
+			Botella	Ideal	1 Lt	7,45	6	41,7	
+	Arroz		Arroz arborio	Costeño	750 gr	5,9	24	138,6	
+			Arroz Extra		5 kg	21,2	6	124,2	
+			Arroz Extra		750 gr	2,99	12	32,88	
+			Arroz Integral		750 gr	3,19	12	35,28	
+			Arroz Superior		5 kg	13,99	6	80,94	
+			Arroz Extra Ocasión Perfecta	Paisana	1 kg	4,39	12	49,68	
+			Arroz Extra Ocasión Perfecta		5 kg	21,6	6	126,6	
+			Arroz Risotto		1 kg	7,2	6	40,2	
+			Arroz Don Ruggero, Carnoroli	Saman	1 kg	8,4	12	97,8	
+			Arroz Parboleid		1 kg	4,9	12	55,8	
+			Arroz Urumati		1 kg	7,1	12	82,2	
+	Azúcar		Azúcar Blanca	Dulfina	1 kg	3,99	12	44,88	
+			Azúcar Rubia		1 kg	3,65	12	40,8	
+			Azúcar Rubia		2 Kg	7,19	6	40,14	
+			Azúcar Blanca Light en Bolsa	Incauca	850 gr	9,8	12	114,6	
+			Azúcar Blanca Light en Caja		850 gr	9,8	12	114,6	
+			Azúcar Morena Light		454 gr	7,4	24	174,6	
+			Azúcar Morena Light		850 gr	9,8	12	114,6	
+			Azúcar Blanca Light	Valdez	1 Kg	10,6	12	124,2	
+			Azúcar Blanca Light		500 gr	7,3	24	172,2	
+			Azúcar Blanca Light Caja		300 gr	8,99	12	104,88	
+	Fideos		Fideo Cabello de Ángel	Don Vittorio	250 gr	1,25	24	27	
+			Fideo Canuto Chico		250 gr	1,2	24	25,8	
+			Fideo Canuto Rayado		250 gr	1,2	24	25,8	
+			Fideo Tornillo		250 gr	1,2	24	25,8	
+			Fideo Linguini Grosso #42		500 gr	2,25	12	24	
+			Spaghetti #34		500 gr	2,24	12	23,88	
+			Fideo Cabello de Ángel	Molitalia	250 gr	1,25	24	27	
+			Fideo Canuto Chico		250 gr	0,85	24	17,4	
+			Fideo Corbata Mediano		250 gr	0,85	24	17,4	
+			Fideo Munición		250 gr	0,85	24	17,4	
+			Spaghetti #32		500 gr	2,2	12	23,4	
+			Tallarín #42		500 gr	2,2	12	23,4	
+	Menestras		Arverja Verde	Costeño	500 gr	4,1	24	95,4	
+			Frijol Caballero		500 gr	5,6	24	131,4	
+			Frijol Canario		500 gr	6,3	24	148,2	
+			Frijol Castilla		500 gr	3,25	24	75	
+			Frijol Panamito		500 gr	3,49	24	80,76	
+			Garbanzos		500 gr	5,95	24	139,8	
+			Lenteja		500 gr	3,19	24	73,56	
+			Arverja Verde	La Serranita	500 gr	4,6	24	107,4	
+			Frijol Canario		500 gr	5,95	24	139,8	
+			Frijol Panamito		500 gr	4	24	93	
+			Garbanzos		500 gr	5,99	24	140,76	
+			Lenteja		500 gr	3,5	24	81	
+			Maíz Pop Corn		500 gr	3,9	24	90,6	
+			Pallares		500 gr	5,25	24	123	
+			Arverja Verde	Tesoro del Campo	500 gr	3,2	24	73,8	
+			Frijol Canario		500 gr	6,25	24	147	
+			Frijol Castilla		500 gr	3	24	69	
+			Frijol Panamito		500 gr	3,25	24	75	
+			Garbanzos		500 gr	5,3	24	124,2	
+			Lenteja		500 gr	3,1	24	71,4	
+			Lenteja Bebé		500 gr	3,5	24	81	
+			Trigo Mote		500 gr	2,45	24	55,8	
+	Bebidas	Gaseosas	Botella no retornable	Coca-Cola	3 Lt	6,99	6	38,94	
+			Botella no retornable		2,5 Lt	6,09	6	33,54	
+			Botella no retornable		1,5 Lt	5,4	6	29,4	
+			Zero		1,5 Lt	5,4	6	29,4	
+			Zero		500 ml	2,1	12	22,2	
+			Lata		350 ml	3,1	6	15,6	
+			Botella no retornable	Fanta	3 Lt	6,8	6	37,8	
+			Botella no retornable		1,75 Lt	4,7	6	25,2	
+			Botella no retornable		500 ml	1,9	12	19,8	
+			Botella no retornable	Inca Kola	3 Lt	8,5	6	48	
+			Botella no retornable		2,5 Lt	6,05	6	33,3	
+			Botella no retornable		1,5 Lt	5,4	6	29,4	
+			Botella no retornable		410 ml	1,9	12	19,8	
+			Zero		1,5 Lt	5,4	6	29,4	
+			Zero		410 ml	1,9	12	19,8	
+			Botella no retornable	Pepsi	2,8 Lt	5,5	6	30	
+			Botella no retornable		1,3 Lt	3	6	15	
+			Botella no retornable		750 ml	1,8	12	18,6	
+			Botella no retornable		500 ml	1,2	12	11,4	
+			Light		1,3 Lt	3,5	6	18	
+			Light		500 ml	1,4	12	13,8	
+		Agua	Con gas	Cielo	625 ml	1,1	12	10,2	
+			Con gas		2,5 Lt	2,6	6	12,6	
+			Sin gas		625 ml	1,1	12	10,2	
+			Sin gas		2,5 Lt	2,6	6	12,6	
+			Sin gas		7 Lt	6,4	6	35,4	
+			Sin gas		20 Lt	23,99	1	20,99	
+			Sin gas	San Luis	625 ml	1,3	12	12,6	
+			Sin gas		1 Lt	2,2	12	23,4	
+			Sin gas		2,5 Lt	3,1	6	15,6	
+			Sin gas		7 Lt	7,6	6	42,6	
+			Sin gas, Caja no retornable		20 Lt	20,9	1	17,9	
+			Sin gas, Bidón retornable		20 Lt	18,2	1	15,2	
+			Con gas	San Mateo	600 ml	1,5	12	15	
+			Con gas		1,6 ml	2,6	6	12,6	
+			Sin gas		600 ml	1,5	12	15	
+			Sin gas		2,5 Lt	3,7	6	19,2	
+			Sin gas		21 Lt	20,5	1	17,5	
