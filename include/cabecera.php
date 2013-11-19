@@ -1,7 +1,9 @@
 ﻿<?php $data;
-	if(isset($_SESSION['carrito'])){;?>
-<?php $data = json_decode(json_encode($_SESSION['carrito']), true); ?>
-<?php }else{ $data = array(); } ?>
+	if(isset($_SESSION['carrito'])){
+		$data = json_decode(json_encode($_SESSION['carrito']), true);
+	}else{
+		$data = array();}
+?>
 <div class="navbar navbar-inverse navbar-fixed-top" id="categorias">
 	<div class="navbar-inner">
 		<div class="container">
@@ -12,7 +14,7 @@
 			</button>
 			<a class="brand" href="<?php echo $_SERVER['SCRIPT_NAME'];?>" style="padding-bottom: 0;"><img style="width: 100px;"src="img/logo.png"></a>
 			<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>
-               <a href="#" class="btn btn-danger"><i class ="icon-search pull-left" id="icBus"></i></a>
+            <a href="#" class="btn btn-danger"><i class ="icon-search pull-left" id="icBus"></i></a>
 			<div class="nav-collapse collapse pull-right">
 				
 				<ul class="nav nav_fix">
