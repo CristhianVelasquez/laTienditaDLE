@@ -17,6 +17,9 @@
 		<script src="js/scriptBase.js" type="text/javascript"></script>
 		<script src="js/bootbox.min.js" type="text/javascript"></script>
 		<script src="js/scriptEfectos.js" type="text/javascript"></script>
+		
+		
+		
 	</head>
 	<body>
 		<div class="container">

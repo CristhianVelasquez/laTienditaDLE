@@ -1,4 +1,10 @@
 <!--PENDIENTE POR ANALISIS DE CALIDAD-->
+<?
+
+$mañana = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+1,date("Y")));
+
+?>
+
 <div class="page-header">
 		<h1>Mi Carrito</h1>
 	</div>
@@ -43,9 +49,9 @@
 <div  class="span4 pull-right" style="padding-top: 5%; margin-right: 5%">
 <div class="well"><form action="">
 	<label>Total de compras</label>
-    <input type="text" placeholder="S/." class="span2">
+    <input type="text" class="span2" value="S/.<?php echo $total ?>" readonly>
 	<label>Fecha de entrega</label>
-	<input type="date" name="fecha" class="span2">
+	<input type="date" name="datepicker" class="span2" min="<?= $mañana ?>">
     <label class="checkbox">
       <input type="checkbox"> Guardar lista de compras
     </label>
