@@ -3002,7 +3002,8 @@ table th[class*="span"],
 }
 
 .open {
-  *z-index: 1000;
+   *z-index: 1000;
+  
 }
 
 .open > .dropdown-menu {
@@ -3960,6 +3961,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
+  
 }
 
 .nav > li > a > img {

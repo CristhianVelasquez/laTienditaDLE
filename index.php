@@ -1,4 +1,8 @@
-﻿<?php session_start(); ?>
+﻿<?php session_start(); 
+ 
+include('procesos/config.php');
+include('procesos/funciones.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -17,19 +21,16 @@
 		<script src="js/scriptBase.js" type="text/javascript"></script>
 		<script src="js/bootbox.min.js" type="text/javascript"></script>
 		<script src="js/scriptEfectos.js" type="text/javascript"></script>
-		
-		
-		
 	</head>
 	<body>
 		<div class="container">
 			<?php include("include/cabecera.php");?>
 			<div class="row">
-				
-				<div class="span9">
-					<?php include("include/barra_categorias_productos.php") ?>
+				<!--Cambio del tamaño de los spans--->
+				<div class="span12">
+					<div class="span3"><?php include("include/barra_categorias_productos.php") ?></div>
 					<section>
-						<div style="background-color: #ffffff;">
+						<div class="span8" style="background-color: #ffffff;">
 							<?php
 								include("procesos/validarContenido.php");
 								//include('pags/registroB.php');

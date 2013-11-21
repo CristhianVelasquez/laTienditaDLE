@@ -1,16 +1,14 @@
 <?php 
 	
-	include ('procesos/config.php'); 
-	include ('procesos/funciones.php');
-	
 	$textoBusquedaPrincipal="";
-	
-	if(isset($_POST['textoBusquedaPrincipal'])){
+	$productos="";
+	if(!isset($_POST['textoBusquedaPrincipal'])){
+		die('Usted no ha ingresado texto a buscar');
+	}
+	else{
 	$busqueda = $_POST['textoBusquedaPrincipal'];
 	$busqueda = mysql_real_escape_string($busqueda);
 	$productos = consulta_bd("SELECT * FROM producto WHERE nombreProducto LIKE '%$textoBusquedaPrincipal%'", $config);
-	
-	
 	}
 	
 ?>

@@ -1,6 +1,4 @@
 <?php
-	include ('procesos/config.php'); 
-	include ('procesos/funciones.php');
 	$nombreCategoria;
 	if(isset($_GET['subpag'])){ 
 		$nombreCategoria=$_GET['subpag'];

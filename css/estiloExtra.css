@@ -99,3 +99,10 @@ background-color: #dff0d8;
 	text-align:center;
 	padding:3px 4px;
 }
+.sublista{
+display: none;
+}
+
+.listaLateral li:hover .sublista{
+display: block;
+}
