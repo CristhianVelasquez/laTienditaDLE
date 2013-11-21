@@ -45,7 +45,7 @@ session_start();
 			} else	if($contrasenia1 != $contrasenia2){
 				$verificar = false;
 				$msgErrorContrasenia='Las contrase&ntilde;as no coinciden.';
-			} else if(strlen($contrasenia1) <= 6){
+			} else if(strlen($contrasenia1) < 6){
 				$verificar = false;
 				$msgErrorContrasenia='La longitud m&iacute;nima de la contrase&ntilde;a es de 6.';
 			} else if($contrasenia1 == $ruc){
@@ -90,6 +90,7 @@ session_start();
 			
 			if($verificar==true){
 				
+				$fechaHoy= date('Y-m-d h:m:s');
 				$contrasenia1=crypt($contrasenia1);
 				consulta_bd_sin_resultados("INSERT INTO empresa(razonSocial,ruc,telefono,direccionFiscal,correo,flagContactoCorreo) VALUES('$razonSocial','$ruc','$telefono','$dirFiscal','$correo',b'$flagContactoCorreo')",$config);
 				$arrayCodigoEmpresa=consulta_bd_fetchByIndex("SELECT MAX(codigoEmpresa) FROM empresa",$config);
@@ -98,6 +99,8 @@ session_start();
 				$arrayCodigoUsuario=consulta_bd_fetchByIndex("SELECT MAX(codigoUsuario) FROM usuario",$config);
 				$codigoUsuario=$arrayCodigoUsuario[0][0];
 				consulta_bd_sin_resultados("INSERT INTO contrasenia(codigoUsuario,contrasenia,flagContraseniaActual) VALUES('$codigoUsuario','$contrasenia1',b'1')",$config);
+				$codigoGrupoClientesUsuarios='1';
+				consulta_bd_sin_resultados("INSERT INTO grupo_usuario(codigoGrupo,codigoUsuario,fechaAsignamiento) VALUES('$codigoGrupoClientesUsuarios','$codigoUsuario','$fechaHoy')",$config);
 				$msgConfirmation="Se ha registrado satisfactoriamente";
 			}
 		}else{

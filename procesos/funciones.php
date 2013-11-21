@@ -80,4 +80,9 @@ function  consulta_bd_sin_resultados($consulta,$config){
 		}
 		return $sw;
 	}
+		function verDetallesProducto($codigoProducto,$config){
+		$sentencia="SELECT * FROM producto WHERE codigoProducto='$codigoProducto'";
+		$respuesta=consulta_bd_fetchByIndex($sentencia,$config);
+		return	$respuesta;	
+	}
 ?>

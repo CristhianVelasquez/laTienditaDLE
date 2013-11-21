@@ -5,7 +5,7 @@ $query="SELECT * FROM usuario usu,empresa emp WHERE usu.codigoEmpresa=emp.codigo
 $respuestaUsuario=consulta_bd_fetchByIndex($query,$config);
 ?>
 
-<input type="text" placeholder="Digite aquí..."/>
+<input type="text" placeholder="Digite aqu&iacute;..."/>
 <input type="submit" value="Buscar"/>
 <form action="" method="">
 	<?php if(count($respuestaUsuario)>0){?>
