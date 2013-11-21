@@ -6,7 +6,7 @@
 			.:: La tiendita de la esquina ::.
 		</title>
 		<meta http-equiv="Content-type" content="text/html;
-<?php header("Content-Type: text/html;charset=utf-8"); ?>
+		<?php header("Content-Type: text/html;charset=utf-8"); ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/estilos.css" type="text/css" rel="stylesheet"/>
 		<link href="css/estiloExtra.css" type="text/css" rel="stylesheet"/>
@@ -27,7 +27,7 @@
 			<div class="row">
 				
 				<div class="span9">
-					<?php //include("include/barra_categorias_productos.php") ?>
+					<?php include("include/barra_categorias_productos.php") ?>
 					<section>
 						<div style="background-color: #ffffff;">
 							<?php
