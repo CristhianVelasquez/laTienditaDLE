@@ -634,3 +634,11 @@ padding:2px 4px;
 .contenedor_imagenes{
 	width:550px;	
 }
+
+#formuBusq{
+	float:left;
+	margin-top:5px;
+}
+#resultadooo{
+	margin-top:30px;
+}

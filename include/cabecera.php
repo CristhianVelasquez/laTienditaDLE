@@ -13,8 +13,11 @@
 			<span class="icon-bar"></span>
 			</button>
 			<a class="brand" href="<?php echo $_SERVER['SCRIPT_NAME'];?>" style="padding-bottom: 0;"><img style="width: 100px;"src="img/logo.png"></a>
-			<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>
-            <a href="#" class="btn btn-danger"><i class ="icon-search pull-left" id="icBus"></i></a>
+				<form action="index.php" method="GET" id="formuBusq">
+						<input type="hidden" name="pag" value="result"></input>
+						<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>					
+						<input type="submit" class="btn-danger" value="Buscar"></input>
+				</form>
 			<div class="nav-collapse collapse pull-right">
 				
 				<ul class="nav nav_fix">
