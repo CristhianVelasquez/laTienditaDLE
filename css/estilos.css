@@ -1,5 +1,5 @@
 html,body{
-/*background-image: url("../img/fondo1.jpg");*/
+background-image: url("../img/fondo1.jpg");
 position: relative;
 background-position: center;
 background-repeat: no-repeat;
@@ -31,11 +31,6 @@ body{
 #listaCategorias a{
 	padding: 10px 10px 10px;
 	
-}
-
-#categorias .navbar-inner{
-	background-image: url("../img/menu1.jpg");
-	background-repeat: repeat-x;
 }
 
 #titCategorias{

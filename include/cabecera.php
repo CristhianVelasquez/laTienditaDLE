@@ -4,7 +4,7 @@
 	}else{
 		$data = array();}
 ?>
-<div class="navbar navbar-inverse navbar-fixed-top" id="categorias">
+<div class="navbar navbar-fixed-top" id="categorias">
 	<div class="navbar-inner">
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -18,12 +18,13 @@
 						<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>					
 						<input type="submit" class="btn-danger" value="Buscar"></input>
 				</form>
-			<div class="nav-collapse collapse pull-right">
+			<div class="sombreo nav-collapse collapse pull-right">
 				
 				<ul class="nav nav_fix">
 					<li>
-						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=products" class="">Productos</a>
-					</li>	   
+						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=products" class="navbar-link">Productos</a>
+					</li>	
+				</ul>
 				<ul class="nav nav_fix pull-right">
 					<li>
 						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=car" class=""><i class="icon-white icon-shopping-cart pull-left" style="padding-right: 3px;"></i><span id="carritoCantidad" class="badge badge-success"><?php echo count($data) ?></span> Carrito</a>

@@ -37,12 +37,12 @@
 				echo $_SERVER['SCRIPT_NAME'];
 				echo "?pag=products&subpag=" . $usu['nombre'] . "'><i class='icon-chevron-right'></i>" . $usu['nombre'] . "</a>";
 				
-				echo '<ul class="sublista nav nav-list">';
+				echo '<ul class="sublista nav">';
 				
 				$result1 = "SELECT * FROM subcategoriaproducto where codigoCategoria =" . $usu['codigoCategoria'];
 				$response1 = consulta_bd_fetchByIndex($result1,$config);
 				foreach($response1 as $usu1){
-					echo '<li><a href="">' . $usu1["nombre"] . '</a></li>';
+					echo '<li><a  class="text-error" href="">' . $usu1["nombre"] . '</a></li>';
 				};
 				
 				echo '</ul>';
