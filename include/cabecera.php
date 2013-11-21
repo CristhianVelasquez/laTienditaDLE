@@ -48,7 +48,13 @@
 					<?php }else if($_SESSION['objUsuarioEmpresa']['nombreGrupo']=='administrador'){ ?> 
 					
 					<li>
-						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=admin" class=""><i class ="icon-briefcase icon-white pull-left" style="padding-right: 3px;"></i>Administrar</a>
+						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=admin" class=""><i class ="icon-briefcase icon-white pull-left" style="padding-right: 3px;"></i>Administrar 
+						<?
+							if(!$_SESSION['objUsuarioEmpresa'] ){}else{
+								$ruc=$_SESSION['objUsuarioEmpresa']['ruc'];
+								echo '('.$ruc.')';
+							} //Acá va el nombre
+						?></a>
 					</li>
 					
 					<?php } ?>

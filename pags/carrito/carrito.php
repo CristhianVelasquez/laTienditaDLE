@@ -47,17 +47,15 @@ $mañana = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+1,date("Y")));
 	</table>
 </div>
 <div  class="span4 pull-right" style="padding-top: 5%; margin-right: 5%">
-<div class="well"><form action="">
+<div class="well center"><form action="">
 	<label>Total de compras</label>
     <input type="text" class="span2" value="S/.<?php echo $total ?>" readonly>
 	<label>Fecha de entrega</label>
 	<input type="date" name="datepicker" class="span2" min="<?= $mañana ?>">
-    <label class="checkbox">
-      <input type="checkbox"> Guardar lista de compras
-    </label>
+    <div class="clear"></div>
     <button type="submit" class="btn">Confirmar compra</button>
 </form></div>
-<fieldset><legend><h5>Tambien te puede interesar</h5></legend>Otros:</fieldset>
+<!--<fieldset><legend><h5>Tambien te puede interesar</h5></legend>Otros:</fieldset>-->
 </div>
 <div class="clear"></div>
 <div class="pull-left">
