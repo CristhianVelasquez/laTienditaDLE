@@ -1,10 +1,7 @@
 <?php
 
 session_start();
-//include('conexionBD.php');
 
-	include "config.php";
-	include "funciones.php";
 	$mensaje="";
 	$msgGeneralError="";
 	$msgConfirmation="";

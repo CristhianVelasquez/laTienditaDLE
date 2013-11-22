@@ -1,6 +1,4 @@
 <?php 
-	include "procesos/config.php";
-	include "procesos/funciones.php";
 $sentencia="SELECT * FROM producto ";
 $productos=consulta_bd_fetchByIndex($sentencia,$config);
 ?>

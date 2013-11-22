@@ -1,6 +1,4 @@
 <?php
-include('procesos/config.php');
-include('procesos/funciones.php');
 $query="SELECT * FROM usuario usu,empresa emp WHERE usu.codigoEmpresa=emp.codigoEmpresa";
 $respuestaUsuario=consulta_bd_fetchByIndex($query,$config);
 ?>
