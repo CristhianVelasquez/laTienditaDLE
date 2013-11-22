@@ -4,6 +4,7 @@
 	}else{
 		$data = array();}
 ?>
+<header>
 <div class="navbar navbar-fixed-top" id="categorias">
 	<div class="navbar-inner">
 		<div class="container">
@@ -69,7 +70,8 @@
 		</div>
 	</div>
 </div>
-<br><br><br>
+</header>
+<!--<br><br><br>
 <!--
 <header id="cabecera">
 	<div class="navbar">
