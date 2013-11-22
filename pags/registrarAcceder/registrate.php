@@ -62,7 +62,8 @@
 		<div class="clear"></div>
 		
 		<p id="aceptarCondiciones">	Al hacer clic en continuar usted está aceptando los </p>
-		<a href=""><p>Terminos y Condiciones</a> y está mostrando estar de acuerdo con la 
+		
+		<p><span><a href="index.php?pag=infoLegal">Terminos y Condiciones</a></span> y está mostrando estar de acuerdo con la 
 		<a href="">Política de Privacidad</a> de La Tiendita de la Esquina.</p>
 		
 		<div id="btns-registroB">

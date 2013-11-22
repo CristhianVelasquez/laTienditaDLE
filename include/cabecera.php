@@ -1,8 +1,10 @@
 ﻿<?php $data;
-	if(isset($_SESSION['carrito'])){;?>
-<?php $data = json_decode(json_encode($_SESSION['carrito']), true); ?>
-<?php }else{ $data = array(); } ?>
-<div class="navbar navbar-inverse navbar-fixed-top" id="categorias">
+	if(isset($_SESSION['carrito'])){
+		$data = json_decode(json_encode($_SESSION['carrito']), true);
+	}else{
+		$data = array();}
+?>
+<div class="navbar navbar-fixed-top" id="categorias">
 	<div class="navbar-inner">
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -11,14 +13,18 @@
 			<span class="icon-bar"></span>
 			</button>
 			<a class="brand" href="<?php echo $_SERVER['SCRIPT_NAME'];?>" style="padding-bottom: 0;"><img style="width: 100px;"src="img/logo.png"></a>
-			<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>
-               <a href="#" class="btn btn-danger"><i class ="icon-search pull-left" id="icBus"></i></a>
-			<div class="nav-collapse collapse pull-right">
+				<form action="index.php" method="GET" id="formuBusq">
+						<input type="hidden" name="pag" value="result"></input>
+						<input type="text" class="input-medium search-query span2 row" name="textoBusquedaPrincipal" placeholder="Búsqueda" id="buscon"></input>					
+						<input type="submit" class="btn-danger" value="Buscar"></input>
+				</form>
+			<div class="sombreo nav-collapse collapse pull-right">
 				
 				<ul class="nav nav_fix">
 					<li>
-						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=products" class="">Productos</a>
-					</li>	   
+						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=products" class="navbar-link">Productos</a>
+					</li>	
+				</ul>
 				<ul class="nav nav_fix pull-right">
 					<li>
 						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=car" class=""><i class="icon-white icon-shopping-cart pull-left" style="padding-right: 3px;"></i><span id="carritoCantidad" class="badge badge-success"><?php echo count($data) ?></span> Carrito</a>
@@ -42,7 +48,13 @@
 					<?php }else if($_SESSION['objUsuarioEmpresa']['nombreGrupo']=='administrador'){ ?> 
 					
 					<li>
-						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=admin" class=""><i class ="icon-briefcase icon-white pull-left" style="padding-right: 3px;"></i>Administrar</a>
+						<a href="<?php echo $_SERVER['SCRIPT_NAME'];?>?pag=admin" class=""><i class ="icon-briefcase icon-white pull-left" style="padding-right: 3px;"></i>Administrar 
+						<?
+							if(!$_SESSION['objUsuarioEmpresa'] ){}else{
+								$ruc=$_SESSION['objUsuarioEmpresa']['ruc'];
+								echo '('.$ruc.')';
+							} //Acá va el nombre
+						?></a>
 					</li>
 					
 					<?php } ?>

@@ -1,7 +1,6 @@
 <?php
 session_start();
-include "config.php";
-include "funciones.php";
+
 	$msgErrorContrasenia='';
 if($_SERVER['REQUEST_METHOD']!='POST'){
 		$msgErrorContrasenia='Metodo de acceso no permitido.';

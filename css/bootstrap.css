@@ -3002,7 +3002,8 @@ table th[class*="span"],
 }
 
 .open {
-  *z-index: 1000;
+   *z-index: 1000;
+  
 }
 
 .open > .dropdown-menu {
@@ -3960,6 +3961,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
+  
 }
 
 .nav > li > a > img {
@@ -4581,6 +4583,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	
 }
 
 .navbar-fixed-bottom {
@@ -4788,6 +4791,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 6px 0 6px 6px;
      -moz-border-radius: 6px 0 6px 6px;
           border-radius: 6px 0 6px 6px;
+	
 }
 
 .navbar-inverse .navbar-inner {

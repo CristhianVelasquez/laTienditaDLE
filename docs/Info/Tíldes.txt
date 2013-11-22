@@ -1,0 +1,14 @@
+Á = &Aacute;
+É = &Eacute;
+Í = &Iacute;
+Ó = &Oacute;
+Ú = &Uacute;
+
+á = &aacute;
+é = &eacute;
+í = &iacute;
+ó = &oacute;
+ú = &uacute;
+
+Ñ = &Ntilde;
+ñ = &ntilde;

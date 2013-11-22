@@ -1,5 +1,5 @@
 <?php
-	$address='';
+	$address='pags/defaultPag.php';
 		if(!isset($_GET['pag'])){
 			$address='pags/defaultPag.php';
 		}else{
@@ -7,6 +7,9 @@
 			switch($pag){
 				case 'products':
 					$address = 'pags/products.php';
+					break;
+				case 'result' :
+					$address = 'pags/resultadoBusqueda.php';
 					break;
 				case 'regA':
 					$address = 'pags/registroA.php';
@@ -68,13 +71,16 @@
 					$address='pags/informacionLegal.php';
 				break;
 				case 'admin':
-					$address='procesos/administrar/panelAdministrativo.php';
+					$address='pags/administrar/panelAdministrativo.php';
 				break;
 				case 'userList':
-					$address='procesos/administrar/listaUsuarios.php';
+					$address='pags/administrar/listaUsuarios.php';
 				break;
 				case 'productList':
-					$address='procesos/administrar/listaProductos.php';
+					$address='pags/administrar/listaProductos.php';
+				break;
+				case 'viewProducts':
+					$address='pags/administrar/verDetallesProductos.php';
 				break;
 				}
 		}

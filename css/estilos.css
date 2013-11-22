@@ -1,5 +1,5 @@
 html,body{
-/*background-image: url("../img/fondo1.jpg");*/
+background-image: url("../img/fondo1.jpg");
 position: relative;
 background-position: center;
 background-repeat: no-repeat;
@@ -7,10 +7,6 @@ margin: 0 auto;
 padding: 0px;
 height: 100%;
 background-attachment: fixed;
-}
-body{
-
-
 }
 
 #contenedor{
@@ -31,11 +27,6 @@ body{
 #listaCategorias a{
 	padding: 10px 10px 10px;
 	
-}
-
-#categorias .navbar-inner{
-	background-image: url("../img/menu1.jpg");
-	background-repeat: repeat-x;
 }
 
 #titCategorias{
@@ -239,8 +230,11 @@ width: 40%;
 #mapa-nav
 {
 width:100%;
-height:225px;
+height:33%;
 background-color: #f5f5f5;
+/*padding: 0px;*/
+margin-top: 120px;
+padding-left: 18%;
 }
 .mapa-nav-cont
 {
@@ -279,6 +273,17 @@ font-family:Arial,Verdana;
 {
 color:#56bb6e;
 }
+/*---Pie de pagina---*/
+.mapa-nav-cont h1{
+font-size:12px;
+margin: 0px;
+}
+
+
+#full-content{
+height:100%;
+}
+
 /*--- Nosotros---*/
 .divContainer{
 width:972px;
@@ -548,23 +553,7 @@ height:250px;
 float:left;
 border:1px solid red;
 }
-/*---Pie de pagina---*/
-.mapa-nav-cont h1{
-font-size:12px;
-margin: 0px;
-}
-.centradoFooter{
-margin:0 auto;
-height:100px;
-width:875px;
-}
-footer{
-width:100%;
-padding: 0px;
-}
-#full-content{
-height:100%;
-}
+
 
 /*--Carrito--*/
 .boton-carrito{
@@ -633,4 +622,22 @@ padding:2px 4px;
 
 .contenedor_imagenes{
 	width:550px;	
+}
+
+#formuBusq{
+	float:left;
+	margin-top:5px;
+}
+#resultadooo{
+	margin-top:30px;
+}
+
+/*Panel Administrativo*/
+.pnl_adm_div{
+	float:left;
+	margin-left:50px;
+}
+
+.pnl_adm_div h4{
+	text-align:center;
 }
