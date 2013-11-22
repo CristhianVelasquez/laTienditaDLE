@@ -2,14 +2,26 @@
 	
 	$textoBusquedaPrincipal="";
 	$productos="";
-	if(!isset($_POST['textoBusquedaPrincipal'])){
-		die('Usted no ha ingresado texto a buscar');
+	if(!isset($_GET['textoBusquedaPrincipal'])){
+		die('No coincide la búsqueda');
 	}
 	else{
-	$busqueda = $_POST['textoBusquedaPrincipal'];
+	$busqueda = $_GET['textoBusquedaPrincipal'];
 	$busqueda = mysql_real_escape_string($busqueda);
-	$productos = consulta_bd("SELECT * FROM producto WHERE nombreProducto LIKE '%$textoBusquedaPrincipal%'", $config);
+	$busqueda = trim($busqueda);
+	if($busqueda == ""){
+		die('No a escrito nada');
 	}
+	$productos = consulta_bd("SELECT *
+								FROM producto p, marca m, subcategoriaproducto s
+								WHERE p.codigoMarca = m.codigoMarca
+								AND p.codigosubCategoria = s.codigosubCategoria
+								AND (
+								nombreProducto LIKE  '%$busqueda%'
+								OR nombreMarca LIKE  '%$busqueda%'
+								OR nombre LIKE  '%$busqueda%'
+								)", $config);
+		}
 	
 ?>
 
