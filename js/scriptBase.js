@@ -174,7 +174,34 @@ $('document').ready(function(){
 	});
 	 /* Contactenos */
 	 
-	 $('#BotonContactenos').on("click",function(e){
+	$('input#BotonContactenos').on("click",function(e){
+			e.preventDefault();
 		
-	 });
+		var array = new Object();
+		array['nombre']=$('input#Contactos_name').val();
+		array['correo']=$('input#Contacto_mail').val();
+		array['mensaje']=$('input#Contacto_mensaje').val();
+		
+		$.ajax({
+			type: 'post',
+			url: 'procesos/registrarContactanos.php',
+			data: array,
+			success: function(datos){
+
+				//bootbox.alert(datos+"");
+				
+				var response = $.parseJSON(datos);
+				$('#nombreError').html('<p>'+ response.errorNombre+'</p>');
+				$('#correoError').html('<p>'+ response.errorCorreo+'</p>');
+				$('#mensajeError').html('<p>'+ response.errorMensaje+'</p>');
+				if(response.confirmation!=""){
+					bootbox.alert('Confirmado');					
+				}
+			},
+			error: function(response) {
+				bootbox.alert(response);
+			 }
+		});
+	});
+	
 });
