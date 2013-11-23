@@ -1,6 +1,5 @@
 <footer>
-   <div id="mapa-nav">
-      <div class="centradoFooter">
+   <div class="row">
          <div class="mapa-nav-cont">
             <h1><a href="index.php">Home</a></h1>
          </div>
@@ -51,6 +50,5 @@
                <li><a href="index.php?pag=contactenos" >Contactenos</a></li>
             </ul>
          </div>
-      </div>
-   </div>
+	</div>
 </footer>

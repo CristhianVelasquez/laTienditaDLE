@@ -4,12 +4,8 @@
 	}else{
 		$data = array();}
 ?>
-<<<<<<< HEAD
 
 <div class="navbar navbar-fixed-top">
-=======
-<div class="navbar navbar-fixed-top" id="categorias">
->>>>>>> parent of 37f2ae5... Cambios pie de pagina
 	<div class="navbar-inner">
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -74,12 +70,8 @@
 		</div>
 	</div>
 </div>
-<<<<<<< HEAD
 
 <!--<br><br><br>
-=======
-<br><br><br>
->>>>>>> parent of 37f2ae5... Cambios pie de pagina
 <!--
 <header id="cabecera">
 	<div class="navbar">
