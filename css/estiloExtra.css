@@ -100,6 +100,9 @@ float:left;
 	border-color:#FF0000;
 
 }
+.carousel-caption{
+	height:16px;
+}
 /*--Ayuda--*/
 #ayuda{
 margin:0px auto;
