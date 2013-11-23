@@ -5,6 +5,9 @@
 		}else{
 			$pag=$_GET['pag'];
 			switch($pag){
+				case 'nuevoProducto':
+					$address = 'pags/administrar/nuevoProducto.php';
+					break;
 				case 'products':
 					$address = 'pags/products.php';
 					break;

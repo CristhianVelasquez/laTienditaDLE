@@ -1,17 +1,16 @@
 <?php 
-	include "procesos/config.php";
-	include "procesos/funciones.php";
+
 $sentencia="SELECT * FROM producto ";
 $productos=consulta_bd_fetchByIndex($sentencia,$config);
 ?>
+
+<button><a href="index.php?pag=nuevoProducto">Añadir Producto</a></button>
 <form>
-<button>Nuevo</button>
-<button>Eliminar</button>
-<div class="clear"></div>
 <input type="text" placeholder="Digite aqu&iacute;..."/>
 <input type="submit" value="Buscar"/>
 </form>
-<table>
+
+<table class="table table-striped">
 <tr>
 	<th>C&oacute;digo</th>
 	<th>Nombre</th>

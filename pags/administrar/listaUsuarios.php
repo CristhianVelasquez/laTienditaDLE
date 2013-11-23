@@ -1,6 +1,4 @@
 <?php
-include('procesos/config.php');
-include('procesos/funciones.php');
 $query="SELECT * FROM usuario usu,empresa emp WHERE usu.codigoEmpresa=emp.codigoEmpresa";
 $respuestaUsuario=consulta_bd_fetchByIndex($query,$config);
 ?>
@@ -9,7 +7,7 @@ $respuestaUsuario=consulta_bd_fetchByIndex($query,$config);
 <input type="submit" value="Buscar"/>
 <form action="" method="">
 	<?php if(count($respuestaUsuario)>0){?>
-	<table>
+	<table class="table table-striped">
 	<tr>
 		<th>C&oacute;digo Usuario</th>
 		<th>Raz&oacute;n Social</th>
