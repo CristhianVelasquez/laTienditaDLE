@@ -19,7 +19,54 @@
 			</div>
 		</div>
 	</div>-->
+	<h1 >La Tiendita de la Esquina</h1>
+	<h2>Abastecete en un solo lugar</h2>
+	<div class="well well-small" >
+		<div id="OfertasIrresistibles" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#OfertasIrresistibles" data-slide-to="Of1" class="active"></li>
+				<li data-target="#OfertasIrresistibles" data-slide-to="Of2" class=""></li>
+				<li data-target="#OfertasIrresistibles" data-slide-to="Of3" class=""></li>
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner tamSlide">
+				<div class="item active">
+					<a href="index.php?pag=products&subpag=Abarrotes">
+						<img src="img\SlideShow\Ofertas.png" title="" alt="Ofertas Navideñas">
+					</a>
+					<div style="height:25px" class="carousel-caption">
+						<h4>Ofertas Navideñas</h4>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img\SlideShow\Ofertas1.png" alt="Surtidos para la mesa" usemap="#ofertas">
+					
+					<!--<img src="planets.gif" width="720" height="240" alt="Planets" usemap="#planetmap"-->
 
+					<map name="ofertas">
+					  <area shape="rect" coords="0,0,240,240" alt="Conserva de Frutas" href="index.php?pag=products&subpag=Enlatados">
+					  <area shape="rect" coords="240,240,720,720" alt="Galletas Dulces" href="index.php?pag=products&subpag=Galletas%20y%20golosinas">
+					</map>
+					
+					
+					<div style="height:25px" class="carousel-caption">
+						<h4>Surtidos para la mesa</h4>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img\SlideShow\Ofertas2.png" alt="Palillos Chinos">
+					<div style="height:25px" class="carousel-caption">
+						<h4>Tercer Producto</h4>
+						
+					</div>
+				</div>
+			</div>
+			<!-- Carousel nav -->
+			<a class="left carousel-control" href="#OfertasIrresistibles" data-slide="prev">‹</a>
+			<a class="right carousel-control" href="#OfertasIrresistibles" data-slide="next">›</a>
+		</div>
+	</div>
+	<h2>Los mejores abarrotes</h2>
 	<div class=" well" id="slideShow" >
 		<div id="myCarousel" class="carousel slide">
 			<ol class="carousel-indicators">
@@ -30,16 +77,18 @@
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img style="" src="img\SlideShow\Abarrotes1.png" alt="Cleanex">
-					<div class="carousel-caption">
+					<a href="index.php?pag=products&subpag=Abarrotes">
+						<img src="img\SlideShow\Abarrotes1.png" alt="Cleanex">
+					</a>
+					<div style="height:35px" class="carousel-caption">
 						<h4>Primer Producto</h4>
 						<p>Un producto indispensable para el aseo del hogar. Incluye paño
 							multiusos. </br> <strong>Precio: </strong> <em>S/. 3</em>  </p>
 					</div>
 				</div>
 				<div class="item">
-					<img style="width:300px" src="img\SlideShow\Producto2.jpg" alt="Betún Imperial">
-					<div class="carousel-caption">
+					<img src="img\SlideShow\Abarrotes2.png" alt="Betún Imperial">
+					<div style="height:35px" class="carousel-caption">
 						<h4>Segundo Producto</h4>
 						<p>Lo último en betunes para zapatos, recién ingresado al mercado.
 							Incluye escobilla multiusos </br> <strong>Precio: </strong>
@@ -47,8 +96,8 @@
 					</div>
 				</div>
 				<div class="item">
-					<img style="width:300px" src="img\SlideShow\Producto3.jpg" alt="Palillos Chinos">
-					<div class="carousel-caption">
+					<img src="img\SlideShow\Abarrotes3.png" alt="Palillos Chinos">
+					<div style="height:35px" class="carousel-caption">
 						<h4>Tercer Producto</h4>
 						<p>Palitos chinos (Kuai Zi) hechos con madera selecta y reforestada.
 							Incluye liga. <strong>Precio: </strong> <em>S/. 1</em></p>
@@ -61,5 +110,41 @@
 		</div>
 	</div>
 	
+	<h2>Productos de Limpieza</h2>
+	<div class=" well" id="slideShow" >
+		<div id="Limpieza" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#Limpieza" data-slide-to="L1" class="active"></li>
+				<li data-target="#Limpieza" data-slide-to="L2" class=""></li>
+				
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="index.php?pag=products&subpag=Abarrotes">
+						<img src="img\SlideShow\Limpieza1.png" alt="Cleanex">
+					</a>
+					<div style="height:35px" class="carousel-caption">
+						<h4>Primer Producto</h4>
+						<p>Un producto indispensable para el aseo del hogar. Incluye paño
+							multiusos. </br> <strong>Precio: </strong> <em>S/. 3</em>  </p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img\SlideShow\Limpieza2.png" alt="Betún Imperial">
+					<div style="height:35px" class="carousel-caption">
+						<h4>Segundo Producto</h4>
+						<p>Lo último en betunes para zapatos, recién ingresado al mercado.
+							Incluye escobilla multiusos </br> <strong>Precio: </strong>
+							<em>S/. 2</em></p>
+					</div>
+				</div>
+				
+			</div>
+			<!-- Carousel nav -->
+			<a class="left carousel-control" href="#Limpieza" data-slide="prev">‹</a>
+			<a class="right carousel-control" href="#Limpieza" data-slide="next">›</a>
+		</div>
+	</div>
 	
 </div>

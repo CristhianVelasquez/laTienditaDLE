@@ -1,3 +1,4 @@
+/*Bootstrap*/
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
   
@@ -12,6 +13,22 @@
 .sombreo a:hover{
 	color:red;
 }
+/*Container Principal del cuerpo*/
+.fondo{
+	background-color:white;
+
+}
+/*Container Default page*/
+#principal h1{
+	color: OrangeRed ;
+}
+
+#principal h2{
+	color: SeaGreen;
+	size: 14px;
+}
+
+
 /*--Tab Principal--*/
 #tab-menu
 {
@@ -72,8 +89,16 @@ float:left;
 }
 
 /*--SlideShow--*/
-#slideShow{
-	margin-right:70px;
+.slide{
+	border-style:groove;
+	border-width:12px;
+	border-color:#339966;
+}
+
+#OfertasIrresistibles{
+	margin-top:15px;
+	border-color:#FF0000;
+
 }
 /*--Ayuda--*/
 #ayuda{

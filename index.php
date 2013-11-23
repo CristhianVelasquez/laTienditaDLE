@@ -29,10 +29,10 @@ include('procesos/funciones.php');
 			
 			<div class="row" id="index_contenido">
 				<!--Cambio del tamaño de los spans--->
-				<div class="span12">
+				<div class="span12 ">
 					<div class="span3"><?php include("include/barra_categorias_productos.php") ?></div>
 					<section>
-						<div class="span8" style="background-color: #ffffff;">
+						<div class="span8 fondo">
 							<?php
 								include("procesos/validarContenido.php");
 							?>
