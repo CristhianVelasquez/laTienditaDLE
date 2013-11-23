@@ -23,8 +23,9 @@ include('procesos/funciones.php');
 		<script src="js/scriptEfectos.js" type="text/javascript"></script>
 	</head>
 	<body>
+		<?php include("include/cabecera.php");?>
 		<div class="container">
-			<?php include("include/cabecera.php");?>
+
 			<div class="row">
 				<!--Cambio del tamaño de los spans--->
 				<div class="span12 ">
@@ -42,8 +43,8 @@ include('procesos/funciones.php');
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<?php include("include/pie_de_pagina.php") ?>
+			
 		</div>
-
+		<?php include("include/pie_de_pagina.php") ?>
 	</body>
 </html>
