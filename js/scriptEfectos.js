@@ -4,11 +4,18 @@ $('document').ready(function(){
 		e.preventDefault();
 		$(this).tab('show');
 	});
-	$('#temasAyuda li').click(function(e){
-		
-		$("li").removeClass("active");
-		$(this).addClass("active");
-		//e.preventDefault();
-	});
 	
+	$('.carousel').carousel({
+		interval: 3000
+	})
+	
+	$('#catalogoTab a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+	$('#catalogoTab a').focus(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+		
 });

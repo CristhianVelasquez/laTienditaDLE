@@ -20,18 +20,18 @@
 		</div>
 	</div>-->
 	<h1 >La Tiendita de la Esquina</h1>
-	<h2>Abastecete en un solo lugar</h2>
+	<h2>Abastecimiento completo en un solo lugar</h2>
 	<div class="well well-small" >
-		<div id="OfertasIrresistibles" class="carousel slide">
+		<div id="OfertasIrresistibles" class="carousel slide slideShow ">
 			<ol class="carousel-indicators">
-				<li data-target="#OfertasIrresistibles" data-slide-to="Of1" class="active"></li>
-				<li data-target="#OfertasIrresistibles" data-slide-to="Of2" class=""></li>
-				<li data-target="#OfertasIrresistibles" data-slide-to="Of3" class=""></li>
+				<li data-target="#OfertasIrresistibles" data-slide-to="0" class="active"></li>
+				<li data-target="#OfertasIrresistibles" data-slide-to="1" class=""></li>
+				<li data-target="#OfertasIrresistibles" data-slide-to="2" class=""></li>
 			</ol>
 			<!-- Carousel items -->
-			<div class="carousel-inner tamSlide">
-				<div class="item active">
-					<a href="index.php?pag=products&subpag=Abarrotes">
+			<div class="carousel-inner">
+				<div class="active item">
+					<a href="#OfertasIrresistibles" data-slide="next">
 						<img src="img\SlideShow\Ofertas.png" title="" alt="Ofertas Navideñas">
 					</a>
 					<div style="height:25px" class="carousel-caption">
@@ -39,24 +39,29 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="img\SlideShow\Ofertas1.png" alt="Surtidos para la mesa" usemap="#ofertas">
+					<img src="img\SlideShow\Ofertas1.png" alt="Surtidos para la mesa" usemap="#ofertas1">
 					
-					<!--<img src="planets.gif" width="720" height="240" alt="Planets" usemap="#planetmap"-->
-
-					<map name="ofertas">
-					  <area shape="rect" coords="0,0,240,240" alt="Conserva de Frutas" href="index.php?pag=products&subpag=Enlatados">
-					  <area shape="rect" coords="240,240,720,720" alt="Galletas Dulces" href="index.php?pag=products&subpag=Galletas%20y%20golosinas">
+					<map name="ofertas1">
+					  <area shape="rect" coords="0,0,240,240" alt="Conserva de Frutas" href="index.php?pag=products&subpag=Enlatados#Conserva de Frutas">
+					  <area shape="rect" coords="240,240,724,0" alt="Galletas Dulces" href="index.php?pag=products&subpag=Galletas%20y%20golosinas">
 					</map>
 					
 					
 					<div style="height:25px" class="carousel-caption">
-						<h4>Surtidos para la mesa</h4>
+						<h4>Surtidos para la mesa navideña</h4>
 					</div>
 				</div>
 				<div class="item">
-					<img src="img\SlideShow\Ofertas2.png" alt="Palillos Chinos">
+					<img src="img\SlideShow\Ofertas2.png" alt="Dulces de Temporada" usemap="#ofertas2">
+					
+					<map name="ofertas2">
+					  <area shape="rect" coords="0,0,240,240" alt="Fruna" href="index.php?pag=products&subpag=Galletas%20y%20golosinas#Frunas">
+					  <area shape="rect" coords="240,240,724,0" alt="Gomitas" href="index.php?pag=products&subpag=Galletas%20y%20golosinas#Gomitas">
+					  <area shape="rect" coords="240,240,724,0" alt="Galletas Dulces" href="index.php?pag=products&subpag=Galletas%20y%20golosinas">
+					</map>
+					
 					<div style="height:25px" class="carousel-caption">
-						<h4>Tercer Producto</h4>
+						<h4>Dulces de Temporada</h4>
 						
 					</div>
 				</div>

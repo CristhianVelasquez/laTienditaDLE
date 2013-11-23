@@ -20,9 +20,9 @@
 	<div class="tabbable tabs-below">
 	<?php if(isset($_GET['subpag'])){ ?>
 		<div class="tab-content">
-			<ul id="myTab" class="nav nav-tabs">
+			<ul id="catalogoTab" class="nav nav-tabs">
 				<?php foreach($querySubCategoria as $sub){?>
-				<li class="active"><a href="#<?php echo $sub['codigosubCategoria']?>" data-toggle="tab"><?php echo $sub['nombre']?></a></li>
+				<li class=""><a  name="<?php echo $sub['nombre']?>" href="#<?php echo $sub['codigosubCategoria']?>" data-toggle="tab"><?php echo $sub['nombre']?></a></li>
 				<?php } ?>
 			</ul>
 			<?php $i = 0;

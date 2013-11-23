@@ -40,9 +40,9 @@
 				echo '<ul class="sublista nav">';
 				
 				$result1 = "SELECT * FROM subcategoriaproducto where codigoCategoria =" . $usu['codigoCategoria'];
-				$response1 = consulta_bd_fetchByIndex($result1,$config);
-				foreach($response1 as $usu1){
-					echo '<li><a  class="text-error" href="">' . $usu1["nombre"] . '</a></li>';
+				$subcategoria = consulta_bd_fetchByIndex($result1,$config);
+				foreach($subcategoria as $usu1){
+					echo '<li><a class="text-error" href="index.php?pag=products&subpag='.$usu['nombre'].'#'.$usu1["nombre"].'">' . $usu1["nombre"] . '</a></li>';
 				};
 				
 				echo '</ul>';
