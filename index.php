@@ -14,7 +14,6 @@ include('procesos/funciones.php');
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/estilos.css" type="text/css" rel="stylesheet"/>
 		<link href="css/estiloExtra.css" type="text/css" rel="stylesheet"/>
-		<link href="css/estilos_piedepagina.css" type="text/css" rel="stylesheet"/>
 		<link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
 		<link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet"/>
 		<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
@@ -24,8 +23,8 @@ include('procesos/funciones.php');
 		<script src="js/scriptEfectos.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<?php include("include/cabecera.php");?>
 		<div class="container">
+			<?php include("include/cabecera.php");?>
 			<div class="row">
 				<!--Cambio del tamaño de los spans--->
 				<div class="span12 ">
@@ -34,14 +33,17 @@ include('procesos/funciones.php');
 						<div class="span8 fondo">
 							<?php
 								include("procesos/validarContenido.php");
-							?>
+								//include('pags/registroB.php');
+								?>
 							<div class="clearfix"></div>
 						</div>
 					</section>
 					<div class="clearfix"></div>
 				</div>
 			</div>
+			<div class="clearfix"></div>
+			<?php include("include/pie_de_pagina.php") ?>
 		</div>
-		<?php include("include/pie_de_pagina.php") ?>
+
 	</body>
 </html>
