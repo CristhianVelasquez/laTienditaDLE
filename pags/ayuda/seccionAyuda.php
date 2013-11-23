@@ -15,7 +15,7 @@
 		
 		<div class="span10">
 			
-			<? include ("/procesos/validarAyuda.php");?>
+			<? include ("procesos/validarAyuda.php");?>
 			
 		</div>
 	

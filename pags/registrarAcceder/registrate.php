@@ -2,7 +2,7 @@
 <div id="registroB">
 	<h1 class="title-form" >Bienvenido al registro de usuario</h1>
 	<p>Por favor ingrese los datos indicados a continuación.</p>
-	<form action="" method="post">
+	<form action="procesos/registrarEmpresa.php" method="post">
 		<fieldset>
 			<legend>Datos de acceso</legend>
 			<label>Ingrese una clave de acceso:</label>
