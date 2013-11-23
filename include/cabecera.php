@@ -4,8 +4,8 @@
 	}else{
 		$data = array();}
 ?>
-
-<div class="navbar navbar-fixed-top">
+<header>
+<div class="navbar navbar-fixed-top" id="categorias">
 	<div class="navbar-inner">
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 </div>
-
+</header>
 <!--<br><br><br>
 <!--
 <header id="cabecera">

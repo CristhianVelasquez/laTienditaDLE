@@ -26,8 +26,7 @@ include('procesos/funciones.php');
 	<body>
 		<?php include("include/cabecera.php");?>
 		<div class="container">
-			
-			<div class="row" id="index_contenido">
+			<div class="row">
 				<!--Cambio del tamaño de los spans--->
 				<div class="span12 ">
 					<div class="span3"><?php include("include/barra_categorias_productos.php") ?></div>
