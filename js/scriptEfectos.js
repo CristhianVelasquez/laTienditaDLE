@@ -6,7 +6,8 @@ $('document').ready(function(){
 	});
 	
 	$('.carousel').carousel({
-		interval: 3000
+		interval: 3000,
+		pause: "hover"
 	})
 	
 	$('#catalogoTab a').click(function (e) {
