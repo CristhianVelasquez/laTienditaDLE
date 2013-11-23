@@ -5,6 +5,12 @@ $('document').ready(function(){
 		$(this).tab('show');
 	});
 	
+	$('#AyudaRegistro a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+	
+	//Slideshows
 	$('.carousel').carousel({
 		interval: 3000,
 		pause: "hover"
