@@ -7,16 +7,16 @@
          <div class="mapa-nav-cont">
             <h2>Productos</h2>
             <ul>
-               <li class=""><a href="index.php?pag=abrt">Abarrotes</a></li>
-               <li class=""><a href="index.php?pag=beb">Bebidas</a></li>
-               <li class=""><a href="index.php?pag=cuiPer">Cuidado personal</a></li>
-               <li class=""><a href="index.php?pag=desy">Desayuno</a></li>
-               <li class=""><a href="index.php?pag=embt">Embutidos</a></li>
-               <li class=""><a href="index.php?pag=eltds">Enlatados</a></li>
-               <li class=""><a href="index.php?pag=glltgsn">Galletas y Golosinas</a></li>
-               <li class=""><a href="index.php?pag=licrs">Licores</a></li>
-               <li class=""><a href="index.php?pag=lmpz">Limpieza</a></li>
-               <li class=""><a href="index.php?pag=snkspqs">Snacks y Piqueos</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Abarrotes">Abarrotes</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Bebidas">Bebidas</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Cuidado%20personal">Cuidado personal</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Desayuno">Desayuno</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Embutidos">Embutidos</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Enlatados">Enlatados</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Galletas%20y%20golosinas">Galletas y Golosinas</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Licores">Licores</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Limpieza">Limpieza</a></li>
+               <li class=""><a href="index.php?pag=products&subpag=Snacks%20y%20Piqueos">Snacks y Piqueos</a></li>
             </ul>
          </div>
          <div class="mapa-nav-cont">
