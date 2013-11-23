@@ -99,7 +99,7 @@ session_start();
 				$arrayCodigoUsuario=consulta_bd_fetchByIndex("SELECT MAX(codigoUsuario) FROM usuario",$config);
 				$codigoUsuario=$arrayCodigoUsuario[0][0];
 				consulta_bd_sin_resultados("INSERT INTO contrasenia(codigoUsuario,contrasenia,flagContraseniaActual) VALUES('$codigoUsuario','$contrasenia1',b'1')",$config);
-				$codigoGrupoClientesUsuarios='2';
+				$codigoGrupoClientesUsuarios='1';
 				consulta_bd_sin_resultados("INSERT INTO grupo_usuario(codigoGrupo,codigoUsuario,fechaAsignamiento) VALUES('$codigoGrupoClientesUsuarios','$codigoUsuario','$fechaHoy')",$config);
 				$msgConfirmation="Se ha registrado satisfactoriamente";
 			}

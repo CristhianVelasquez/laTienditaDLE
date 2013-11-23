@@ -7,7 +7,7 @@ $respuestaUsuario=consulta_bd_fetchByIndex($query,$config);
 <input type="submit" value="Buscar"/>
 <form action="" method="">
 	<?php if(count($respuestaUsuario)>0){?>
-	<table class="table table-striped">
+	<table>
 	<tr>
 		<th>C&oacute;digo Usuario</th>
 		<th>Raz&oacute;n Social</th>

@@ -1,20 +1,23 @@
 <?php
-
+	session_start();
 	include "config.php";
 	include "funciones.php";
 	$mensaje="";
+	$verificar=true;
 	$msgGeneralError="";
+	$msgErrorCorreo="";
+	$msgErrorNombre="";
+	$msgErrorMensaje="";
 	$msgConfirmation="";
-
 	if($_SERVER['REQUEST_METHOD']!='POST'){
 		$msgGeneralError='Metodo de acceso no permitido.';
+		$verificar=false;
 	}else{
 
-		if(isset($_POST['nombre']) && isset($_POST['correo']) && isset($_POST['mensaje']) ){
+		if(isset($_POST['nombre']) && isset($_POST['correo']) && isset($_POST['mensaje'])){
 			$nombre=$_POST['nombre'];
 			$correo=$_POST['correo'];
 			$mensaje=$_POST['mensaje'];			
-			$verificar=true;
 			
 			//NOMBRE
 			$msgErrorNombre="";
@@ -23,7 +26,7 @@
 				$msgErrorNombre='El nombre no debe de ser num&eacute;rico';
 			}else if($nombre == ""){
 				$verificar = false;
-				$msgErrorNombre='Debe ingresar un nombre v&#225lido';
+				$msgErrorNombre='Debe ingresar un nombre v&aacute;lido';
 			}
 			
 			//MENSAJE	
@@ -46,6 +49,7 @@
 			}
 		}else{
 			$msgGeneralError='Ha ocurrido alg&uacute;n problema al enviar los datos. Vuelva a intentarlo m&aacute;s tarde.';
+			$verificar=false;
 		}
 	}
 	//echo $mensaje;	
@@ -59,7 +63,7 @@
 	"errorNombre" => $msgErrorNombre,
 	"errorCorreo" => $msgErrorCorreo,
 	"errorMensaje" => $msgErrorMensaje,	
-	"confirmation" => $msgConfirmation,
+	"confirmation" => $verificar,
 	"generalError" => $msgGeneralError
 	);
 	echo json_encode($response);

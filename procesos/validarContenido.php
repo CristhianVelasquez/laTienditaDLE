@@ -5,9 +5,6 @@
 		}else{
 			$pag=$_GET['pag'];
 			switch($pag){
-				case 'nuevoProducto':
-					$address = 'pags/administrar/nuevoProducto.php';
-					break;
 				case 'products':
 					$address = 'pags/products.php';
 					break;
@@ -84,6 +81,9 @@
 				break;
 				case 'viewProducts':
 					$address='pags/administrar/verDetallesProductos.php';
+				break;
+				case 'confirmCompra':
+					$address='pags/confirmacionCompra.php';
 				break;
 				}
 		}

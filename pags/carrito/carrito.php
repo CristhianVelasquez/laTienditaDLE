@@ -1,13 +1,13 @@
 <!--PENDIENTE POR ANALISIS DE CALIDAD-->
 <?php
-
-$mañana = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+1,date("Y")));
-
+$fecha = date('Y-m-j');
+$nuevafecha = strtotime ( '+2 day' , strtotime ( $fecha ) ) ;
+$nuevafecha = date ( 'Y-m-j' , $nuevafecha );
 ?>
 
 <div class="page-header">
 		<h1>Mi Carrito</h1>
-	</div>
+</div>
 <div>
 <?php $data;
 	if(isset($_SESSION['carrito'])){;?>
@@ -25,7 +25,7 @@ $mañana = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+1,date("Y")));
 		</thead>
 		<tbody>
 			<?php $total = 0;?>
-			<?php foreach($data as $itemCarrito){ ?>
+			<?php foreach($data as $key=>$itemCarrito){ ?>
 			<?php $totalItem = ($itemCarrito['price'] * $itemCarrito['quantity']);?>
 			<?php $total = $total + $totalItem?>
 			<tr>
@@ -33,33 +33,38 @@ $mañana = date("Y-m-d",mktime(0,0,0,date("m"),date("d")+1,date("Y")));
 				<td><?php echo $itemCarrito['name'] ?></td>
 				<td class="hidden-phone"><?php echo $itemCarrito['capacity'] ?></td>
 				<td>S/. <?php echo $itemCarrito['price'] ?></td>
-				<td>S/. <?php echo $totalItem?></td>
+				<td >S/. <?php echo $totalItem?></td>
+				<td><a class="rubish" index-array="<?php echo $key?>" href=""><i class="icon-trash"></i></a></td>
 			</tr>
 			<?php } ?>
-			<tr>
+			<!--<tr>
 				<td></td>
 				<td></td>
 				<td class="hidden-phone"></td>
 				<td></td>
-				<td>S/. <?php echo $total ?></td>
-			</tr>
+				<td>S/.<span id="precioTotal-carrito"> <?php //echo $total ?></span></td>
+				<td></td>
+			</tr>-->
 		</tbody>
 	</table>
 </div>
 <div  class="span4 pull-right" style="padding-top: 5%; margin-right: 5%">
-<div class="well center"><form action="">
-	<label>Total de compras</label>
-    <input type="text" class="span2" value="S/.<?php echo $total ?>" readonly>
-	<label>Fecha de entrega</label>
-	<input type="date" name="datepicker" class="span2" min="<?= $mañana ?>">
-    <div class="clear"></div>
-    <button type="submit" class="btn">Confirmar compra</button>
-</form></div>
+<div class="well center">
+	<form action="" method="">
+		<label>Total de compras</label>
+		<input id="precioTotal-carrito" type="text" class="span2" value="S/.<?php echo $total ?>" readonly />
+		<label>Fecha de entrega</label>
+		<input type="date" name="datepicker" class="span2" value="<?php echo $nuevafecha;?>" readonly />
+		<div class="clear"></div>
+		<?php if(isset($_SESSION['objUsuarioEmpresa'])){?>
+			<button id="realizarCompra"  class="btn">Confirmar compra</button>
+		<?php }else{?>
+			<p>Haga click <a href="index.php?pag=acceder">aqu&iacute;</a> para Iniciar sesi&oacute;n y continuar.</p>
+		<?php }?>
+	</form>
+</div>
 <!--<fieldset><legend><h5>Tambien te puede interesar</h5></legend>Otros:</fieldset>-->
 </div>
 <div class="clear"></div>
-<div class="pull-left">
-	<input class="boton-carrito" type="button" value="Continuar comprando" />
-	<input class="boton-carrito" type="button"  value="Confirmar compra"/>
-</div>
+
 <div class="clearfix"></div>

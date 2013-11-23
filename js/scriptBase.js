@@ -69,7 +69,6 @@ $('document').ready(function(){
 			data: array,
 			async:false,
 			success: function(datos){
-				//bootbox.alert(datos+"");
 				var response = $.parseJSON(datos);
 
 				if(response.errorInicio!=""){
@@ -189,19 +188,53 @@ $('document').ready(function(){
 			success: function(datos){
 
 				//bootbox.alert(datos+"");
-				
+				//var mensaje="hola";
 				var response = $.parseJSON(datos);
-				$('#nombreError').html('<p>'+ response.errorNombre+'</p>');
-				$('#correoError').html('<p>'+ response.errorCorreo+'</p>');
-				$('#mensajeError').html('<p>'+ response.errorMensaje+'</p>');
-				if(response.confirmation!=""){
-					bootbox.alert('Confirmado');					
+				$('#nombreError').text(response.errorNombre);
+				$('#correoError').text(response.errorCorreo);
+				$('#mensajeError').text(response.errorMensaje);
+				if(response.confirmation==true){
+					mensaje='Se ha enviado el mensaje satisfactoriamente.';					
+				
+				}else{
+					mensaje=response.generalError;
 				}
+					bootbox.alert(mensaje);					
 			},
 			error: function(response) {
 				bootbox.alert(response);
 			 }
 		});
 	});
-	
+	$('.rubish').on('click',function(e){
+		e.preventDefault();
+		var rowToBeDeleted=$(this).parent().parent();
+		
+		var array = new Object();
+		array['indice']=$(this).attr('index-array');
+		$.ajax({
+			type: 'post',
+			url: 'procesos/quitarProductoCarrito.php',
+			data: array,
+			success: function(datos){
+				var response = $.parseJSON(datos);
+				
+				rowToBeDeleted.fadeOut('slow',function(){
+				rowToBeDeleted.remove();
+				});
+				$("#precioTotal-carrito").val("S/."+response.total);
+				//bootbox.alert(response.total+"");
+				$("#carritoCantidad").empty().html(response.cantidadProductos);
+				
+				
+			},
+			error: function(response) {
+				bootbox.alert(response);
+			 }
+		});
+	 });
+	$('#realizarCompra').on('click',function(e){
+		e.preventDefault();
+		$(location).attr('href','index.php?pag=confirmCompra'); 
+	 });
 });

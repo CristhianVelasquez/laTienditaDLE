@@ -1,4 +1,4 @@
-<?
+<?php
 	$direccion='';
 	if(!isset($_GET['seccion'])){
 		$direccion='pags/ayuda/preguntasFrecuentes.php';

@@ -1,6 +1,4 @@
 <?php
-	include "procesos/config.php";
-	include "procesos/funciones.php";
 if(isset($_GET['productId'])){
 $codigoProducto=$_GET['productId'];
 $productoSeleccionado=verDetallesProducto($codigoProducto,$config);
