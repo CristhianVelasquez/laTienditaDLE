@@ -1,7 +1,4 @@
 <?php
-
-session_start();
-
 	$mensaje="";
 	$msgGeneralError="";
 	$msgConfirmation="";
