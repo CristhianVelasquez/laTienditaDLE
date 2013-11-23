@@ -34,7 +34,7 @@
 					<a href="#OfertasIrresistibles" data-slide="next">
 						<img src="img\SlideShow\Ofertas.png" title="" alt="Ofertas Navideñas">
 					</a>
-					<div style="height:25px" class="carousel-caption">
+					<div class="carousel-caption">
 						<h4>Ofertas Navideñas</h4>
 					</div>
 				</div>
@@ -47,7 +47,7 @@
 					</map>
 					
 					
-					<div style="height:25px" class="carousel-caption">
+					<div class="carousel-caption">
 						<h4>Surtidos para la mesa navideña</h4>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 					  <area shape="rect" coords="460,240,724,0" alt="Galletas Dulces" href="index.php?pag=products&subpag=Galletas%20y%20golosinas#Galleta sixpack">
 					</map>
 					
-					<div style="height:25px" class="carousel-caption">
+					<div class="carousel-caption">
 						<h4>Dulces de Temporada</h4>
 						
 					</div>
@@ -86,7 +86,7 @@
 					<a href="/index.php?pag=products&subpag=Abarrotes#Arroz">
 						<img src="img\SlideShow\Abarrotes1.png" alt="Cleanex">
 					</a>
-					<div style="height:35px" class="carousel-caption">
+					<div class="carousel-caption">
 						<h4>Los arroces más vendidos</h4>
 						
 					</div>
@@ -96,7 +96,7 @@
 						<img src="img\SlideShow\Abarrotes2.png" alt="Fideos">
 					</a>
 					
-					<div style="height:35px" class="carousel-caption">
+					<div  class="carousel-caption">
 						<h4>Todos los fideos</h4>
 						
 					</div>
@@ -128,22 +128,33 @@
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<a href="index.php?pag=products&subpag=Abarrotes">
-						<img src="img\SlideShow\Limpieza1.png" alt="Cleanex">
-					</a>
-					<div style="height:35px" class="carousel-caption">
-						<h4>Primer Producto</h4>
-						<p>Un producto indispensable para el aseo del hogar. Incluye paño
-							multiusos. </br> <strong>Precio: </strong> <em>S/. 3</em>  </p>
+						
+					<img src="img\SlideShow\Limpieza1.png" alt="Productos de Limpieza 1" usemap="#limpieza1">
+										
+					<map name="limpieza1">
+						<!--Coords juega con left, top, right, bottom corner of the rectangle-->
+					  <area shape="rect" coords="0,0,240,240" alt="Detergente" href="index.php?pag=products&subpag=Limpieza#Detergentes">
+					  <area shape="rect" coords="240,240,460,0" alt="Limpiador Porcelanato" href="index.php?pag=products&subpag=Limpieza#Limpiador Porcelanato">
+					  <area shape="rect" coords="460,240,724,0" alt="Aromatizantes" href="index.php?pag=products&subpag=Limpieza#Aromatizantes">
+					</map>
+					
+					<div  class="carousel-caption">
+						<h4>Artículos para limpieza cotidiana</h4>
+						
 					</div>
 				</div>
 				<div class="item">
-					<img src="img\SlideShow\Limpieza2.png" alt="Betún Imperial">
-					<div style="height:35px" class="carousel-caption">
-						<h4>Segundo Producto</h4>
-						<p>Lo último en betunes para zapatos, recién ingresado al mercado.
-							Incluye escobilla multiusos </br> <strong>Precio: </strong>
-							<em>S/. 2</em></p>
+					<img src="img\SlideShow\Limpieza2.png" alt="Productos Limpieza 2" usemap="#limpieza2">
+					
+					<map name="limpieza2">
+						<!--Coords juega con left, top, right, bottom corner of the rectangle-->
+					  <area shape="rect" coords="0,0,240,240" alt="Jabones" href="index.php?pag=products&subpag=Cuidado%20personal#Jabones">
+					  <area shape="rect" coords="240,240,460,0" alt="Shampoo" href="index.php?pag=products&subpag=Cuidado%20personal#Shampoo">
+					  <area shape="rect" coords="460,240,724,0" alt="Jabones" href="index.php?pag=products&subpag=Cuidado%20personal#Jabones">
+					</map>
+					
+					<div class="carousel-caption">
+						<h4>Artículos de aseo personal</h4>
 					</div>
 				</div>
 				
