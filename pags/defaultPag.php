@@ -1,24 +1,5 @@
 <div id="principal">
-	<!--<div class="pull-left tabbable tabs-left well" id="tab-menu">
-		<!--Secciones
-		<ul id="myTab"class="nav nav-tabs">
-			<li class=""><a href="#S1" data-toggle="tab">M&aacute;s comprados</a></li>
-			<li class=""><a href="#S2" data-toggle="tab">Nuevos productos</a></li>
-			<li class="active"><a href="#S3" data-toggle="tab">Marcas presentes</a></li>
-		</ul>
-		<!--Contenido
-		<div class="tab-content">
-			<div class="tab-pane" id="S1">
-				<img src="img\Tab\comprados.jpg" alt="Más comprados" />
-			</div>
-			<div class="tab-pane" id="S2">
-				<img src="img\Tab\nuevos.jpg" alt="Nuevos Productos" />
-			</div>
-			<div class="tab-pane active" id="S3">
-				<img src="img\Tab\marcas.gif" alt="Marcas presentes" />
-			</div>
-		</div>
-	</div>-->
+	
 	<h1 >La Tiendita de la Esquina</h1>
 	<h2>Abastecimiento completo en un solo lugar</h2>
 	<div class="well well-small" >

@@ -1,0 +1,33 @@
+Registro
+1.¿Puedo crearme una cuenta siendo persona natural?
+Si, es posible. Tanto personas jurídicas como personas naturales
+pueden afiliarse nuestro sistema de membresía.
+ 
+2.¿Cómo puedo cambiar mi número telefónico de contacto?
+Ud. puede acceder a la sección de actualización de sus datos, 
+una habiendo iniciado sesión con su cuenta de usuario.
+
+3.¿Es factible dejar algunos datos pendientes de proporcionar?
+No, es factible,los datos solicitados inicialmente son de caracter 
+obligatorio debido a que son indispensables para realizar una compra.
+
+4.¿Cómo puedo recuperar mi contraseña en el caso de que la haya olvidado?
+Ud. puede solicitarla en la opción "Recordar contraseña" que se encuentra en 
+la página de Registrar/Acceder, para lo cual deberá de proporcionar la respuesta
+
+5.¿Por qué no puedo actualizar mi número de RUC?
+Su registro único de contribuyente reemplaza a su clásico nombre de usuario, por
+lo que por políticas del sistema cada cuenta creada esta asociada definitivamente
+al número de RUC.
+
+6.¿Es obligatorio que cambie mi contraseña eventualmente?
+No es obligatorio, pero es recomendable.
+
+7.¿A que dirección de correo llegará mi recordatorio de contraseña?
+La contraseña será enviada al correo que ud. registró en nuestro sitio cuando 
+se creó su cuenta.
+
+8.¿Que pasa si registro de manera incorrecta mi razón social?
+Los comprobantes generados aparecerán a nombre de la razon social que ud. 
+haya registrado al momento de realizar la compra. Debe de asegurarse de que los datos que
+haya ingresado en el formulario de registro sean del todo válidos.

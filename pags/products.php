@@ -28,11 +28,11 @@
 			<?php $i = 0;
 				foreach($querySubCategoria as $sub){?>
 			<div class="tab-pane active" id="<?php echo $sub['codigosubCategoria']?>">
-				<?php
-	$subCategoria = $sub['codigosubCategoria'];
-	$consulta = "SELECT * FROM producto WHERE codigosubCategoria=$subCategoria";
-	$productos = consulta_bd($consulta, $config);
-?>
+		<?php
+		$subCategoria = $sub['codigosubCategoria'];
+		$consulta = "SELECT * FROM producto WHERE codigosubCategoria=$subCategoria";
+		$productos = consulta_bd($consulta, $config);
+	?>
 
 <div id="primeraPagina">
 		<ul class="thumbnails">
