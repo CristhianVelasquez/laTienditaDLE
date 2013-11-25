@@ -39,7 +39,7 @@
 			<?php foreach ($productos as $p) { ?>
 			<li class="span3">
 				<div class="thumbnail">
-					<img src="<?php echo $p['direccionImagen']; ?>">
+					<img class ="img_productos" src="<?php echo $p['direccionImagen']; ?>">
 					<div class="caption">
 						<h4><?php echo $p['nombreProducto']; ?></h4>
 						<h4> <small>C&oacute;digo : <?php echo $p['codigoProducto']; ?></small></h4>
