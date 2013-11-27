@@ -1,6 +1,6 @@
 
 <div class="span3 bs-docs-sidebar">
-	<ul class="nav nav-list bs-docs-sidenav affix listaLateral">
+	<ul class="nav nav-list bs-docs-sidenav affix-top listaLateral">
 		<?php
 			$result = "SELECT * FROM categoriaproducto"; 
 			$response = consulta_bd_fetchByIndex($result,$config);
@@ -26,3 +26,4 @@
 		
 	</ul>
 </div>
+<div class="clearfix"></div>
